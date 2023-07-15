@@ -13,7 +13,7 @@ if (n == 57)
 {
 continue;
 }
-pucthar(',');
+putchar(',');
 putchar(' ');
 putchar('\n');
 return (0);
