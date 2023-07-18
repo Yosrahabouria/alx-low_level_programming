@@ -1,13 +1,14 @@
 #include "main.h"
 /**
- * 2-print_alphabet_x10.c- print alphabet in lower case 10 times
+ * print_alphabet_x10 - print alphabet in lower case 10 times
  * Return:always 0 (success)
 */
 void print_alphabet_x10(void)
-{ int i,j;
+{ int i;
+int j;
 
-	for (j = 1; j <= 10; j++)
-	{
+for (j = 1; j <= 10; j++)
+{
 for (i = 97; i <= 122; i++)
 {
 _putchar(i);
