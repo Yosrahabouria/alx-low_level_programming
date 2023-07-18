@@ -2,24 +2,24 @@
 /**
  *print_sign - check if greter or less than zero
  * Return: 1 if greter than zero.0 if zero. -1 is less than zero (success)
- * @n : the number
+ * @n : the code ASCII
 */
 int print_sign(int n)
 {
-if (n >= 0)
+if (n > 0)
 {
 return (1);
-printf("+");
+_putchar(43);
 }
 else if (n == 0)
 {
 return (0);
-printf("0")
+_putchar(48);
 }
 else
 {
 return (-1);
-printf("-1");
+_putchar(45);
 }
-putchar('\n');
+_putchar('\n');
 }
