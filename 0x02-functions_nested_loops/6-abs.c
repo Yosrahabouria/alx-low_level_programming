@@ -1,18 +1,18 @@
 #include "main.h"
 /**
- * _isalpha - check if alphabet uppercase or lower
- * Return:always 0 (success)
- * @c : the character ASCII code
+ * _abs -  computes the absolute value of an integer
+ * Return:always integer (success)
+ * @i : the character ASCII code
 */
-int _abs(int)
+int _abs(int i)
 {
-	if (a >= 0)
-{ 
-		return (i);
+	if (i >= 0)
+{
+	return (i);
 }
-	else 
-	{
+	else
+{
 		return (i * -1);
-	}
+}
 _putchar('\n');
 }
