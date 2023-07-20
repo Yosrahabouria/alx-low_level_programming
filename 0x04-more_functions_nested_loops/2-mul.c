@@ -1,4 +1,4 @@
-#include "main.h" 
+#include "main.h"
 #include<stdio.h>
 /**
  * mul - return result of multiplication
@@ -10,5 +10,5 @@ int mul(int a, int b)
 {
 int n;
 n = a * b;
-return(n);
+return (n);
 }
