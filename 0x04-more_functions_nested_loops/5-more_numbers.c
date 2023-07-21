@@ -20,6 +20,6 @@ for (i = 0; i <= 14; i++)
 		putchar(i % 10 + '0');
 	}
 }
-}
 putchar('\n');
+}
 }
