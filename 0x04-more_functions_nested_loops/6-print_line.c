@@ -1,3 +1,5 @@
+#include "main.h"
+#include<stdio.h>
 /**
  * print_line- print alphabet in lower case
  * Return:lines (success)
@@ -18,4 +20,6 @@ void print_line(int n)
 			_putchar('_');
 		}
 		_putchar('\n');
-	}
+}
+return (0);
+}
