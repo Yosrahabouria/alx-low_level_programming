@@ -5,8 +5,9 @@ stdout
 /**
  * _puts- print alphabet in lower case
  * Return:always 0 (success)
- *  * @str : the input string
+ * @str : the input string
 */
+
 void _puts(char *str)
 {
 while (*str != '\0')
