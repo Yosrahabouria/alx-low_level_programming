@@ -9,6 +9,17 @@
 */
 void print_rev(char *s)
 {
-putchar(strrev(s));
+int a, b, c;
+a = 0;
+
+while (s[a] != '0')
+{
+	a++;
+}
+c = i;
+for (b = c - a; b >= 0; b--)
+{
+	putchar(s[b]);
+}
 putchar('\n');
 }
