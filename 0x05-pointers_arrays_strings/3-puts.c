@@ -9,8 +9,8 @@ stdout
 */
 void _puts(char *str)
 {
-	char str;
-
-	puts(str);
-	return ('\n');
+while (*str != '\0')
+{
+putchar(*str++);
+putchar('\n');
 }
