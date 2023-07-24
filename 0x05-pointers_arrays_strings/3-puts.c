@@ -9,6 +9,8 @@ stdout
 */
 void _puts(char *str)
 {
-	puts(*str);
+	char str;
+
+	puts(str);
 	return ('\n');
 }
