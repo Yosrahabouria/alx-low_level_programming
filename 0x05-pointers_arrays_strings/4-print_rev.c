@@ -6,7 +6,7 @@
 /**
  * print_rev- print string in reverse
  * Return:always 0 (success)
- * @s : the input string
+ * @s: string
 */
 
 void print_rev(char *s)
