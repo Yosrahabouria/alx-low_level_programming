@@ -12,5 +12,5 @@ void reset_to_98(int *n)
 	p = &n;
 	putchar(*p);
 
-		return (0);
+		return (*p);
 }		
