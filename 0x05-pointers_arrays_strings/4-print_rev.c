@@ -6,13 +6,12 @@
 /**
  * print_rev- print string in reverse
  * Return:always 0 (success)
- * @s : the input char
+ * @s : the input string
 */
 
 void print_rev(char *s)
 {
 int a, b;
-
 a = 0;
 
 while (*s != '0')
