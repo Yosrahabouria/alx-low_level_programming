@@ -20,7 +20,7 @@ for (i = 0; i < j; i++)
 {
 	j--;
 	rev = s[i];
-	s[i] = s[rev];
+	s[i] = s[j];
 	s[j] = rev;
 }
 }
