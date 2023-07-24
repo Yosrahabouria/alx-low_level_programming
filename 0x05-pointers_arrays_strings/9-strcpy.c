@@ -4,9 +4,9 @@
 #include <string.h>
 /**
  * char *_strcpy - copies the string pointed to by src
- * Return:always 0 (success)
- * @dest : input char
- * @src : input char
+ * Return:string
+ * @dest : copy to
+ * @src : copy from
 */
 char *_strcpy(char *dest, char *src)
 {
