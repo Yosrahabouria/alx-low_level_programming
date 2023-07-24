@@ -4,15 +4,15 @@
 #include <string.h>
 
 /**
- * print_rev- print string in reverse
+ * print_rev - print string in reverse
  * Return:always 0 (success)
  * @s: string
 */
 
 void print_rev(char *s)
 {
-int a, b;
-a = 0;
+int a = 0;
+int b;
 
 while (*s != '0')
 {
