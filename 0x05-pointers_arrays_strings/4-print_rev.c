@@ -16,7 +16,7 @@ while (s[a] != '0')
 {
 	a++;
 }
-c = i;
+c = a;
 for (b = c - a; b >= 0; b--)
 {
 	putchar(s[b]);
