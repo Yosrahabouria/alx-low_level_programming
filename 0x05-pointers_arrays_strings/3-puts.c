@@ -1,9 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-stdout
 #include "main.h"
 /**
- * _puts- print alphabet in lower case
+ * _puts- print string
  * Return:always 0 (success)
  * @str : the input string
 */
