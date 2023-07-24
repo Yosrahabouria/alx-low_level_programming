@@ -11,22 +11,20 @@
 
 void print_rev(char *s)
 {
-int a, b, c;
+int a, b;
 
 a = 0;
 
-while (s[a] != '0')
-{
+while (*s != '0')
 {
 	a++;
+	s++;
 }
-
-c = a;
-
-for (b = c - 1; b >= 0; b--)
+s--;
+for (b = a; b > 0; b--)
 {
-	putchar(s[b]);
-}
+	putchar(*s);
+	s--;
 }
 
 putchar('\n');
