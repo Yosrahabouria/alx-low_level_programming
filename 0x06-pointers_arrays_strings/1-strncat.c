@@ -1,5 +1,7 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 /**
  * char *_strncat - concatenates two strings
  * Return: dest
