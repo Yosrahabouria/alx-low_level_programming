@@ -3,9 +3,9 @@
 #include <string.h>
 #include <stdlib.h>
 /**
-*cap_string - capitalizes all words of a string
-*Return: a pointer to the changed string
-*@str : the string to be capitalized
+* cap_string - capitalizes all words of a string
+* Return: a pointer to the changed string
+* @str : the string to be capitalized
 */
 char *cap_string(char *str)
 {
