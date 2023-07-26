@@ -4,8 +4,8 @@
 #include <stdlib.h>
 /**
 * leet - encodes a string into 1337
-* @n : input value
-* Return : n value
+* @n: input value
+* Return: n integer
 */
 char *leet(char *n)
 {
