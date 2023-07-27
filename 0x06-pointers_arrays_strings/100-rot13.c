@@ -11,18 +11,22 @@ char *rot13(char *s)
 {
 	int a;
 	int b;
-	char c[] = 'ABCDEFGHIJKLMNOP';
-	char d[] = 'KLMNOPQRSTUVWXYZ';
+	char c[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char d[] = "KLMNOPQRSTUVWXYZABCDEFGHIJeftshjklmnpoxztyacdbnslmop";
 
-	for (a = 0; s[i] != '\0'; i++)
+	while (*(s + a) != '\0')
+	{
+	for (b = 0; b <= 51; b++)
 	{
 		for (b = 0; b <= 16; b++)
 		{
-			if (s[a] == c[b])
+			if (*(s + a) == c[b])
 			{
-				s[a] == d[b];
+				(*(s + a) == d[b]);
 				break;
 			}
+		}
+		a++;
 		}
 		return (s);
 	}
