@@ -16,7 +16,6 @@ char *cap_string(char *str)
 		while (!(str[index] >= 97) && (str[index] <= 122))
 		{
 
-			index++;
 
 		if (str[index - 1] == ' ' ||
 		   str[index - 1] == '\t' ||
@@ -34,6 +33,7 @@ char *cap_string(char *str)
 
 		   str[index] -= 32;
 		}
+		index++;
 	}
 	}
 return (str);
