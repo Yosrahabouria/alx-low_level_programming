@@ -14,19 +14,17 @@ char *rot13(char *s)
 	char c[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char d[] = "KLMNOPQRSTUVWXYZABCDEFGHIJeftshjklmnpoxztyacdbnslmop";
 
-	while (*(s + a) != '\0')
+
+	for (a = 0; s[a] != '\0'; a++)
 	{
-	for (b = 0; b <= 51; b++)
-	{
-		for (b = 0; b <= 16; b++)
+		for (b = 0; b <= 52; b++)
 		{
-			if (*(s + a) == c[b])
+			if (s[a] == c[b])
 			{
-				(*(s + a) == d[b]);
+				s[a] == d[b];
 				break;
 			}
 		}
-		a++;
 		}
 		return (s);
 	}

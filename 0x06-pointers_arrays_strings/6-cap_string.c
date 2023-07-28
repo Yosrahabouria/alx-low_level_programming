@@ -14,7 +14,7 @@ char *cap_string(char *str)
 	while (str[++index])
 	{
 		while (!(str[index] >= 97) && (str[index] <= 122))
-		{
+		
 
 
 		if (str[index - 1] == ' ' ||
@@ -29,12 +29,12 @@ char *cap_string(char *str)
 		   str[index - 1] == '(' ||
 		   str[index - 1] == ')' ||
 		   str[index - 1] == '{' ||
-		   str[index - 1] == '}'){
+		   str[index - 1] == '}')
 
 		   str[index] -= 32;
-		}
+		
 		index++;
-	}
+	
 	}
 return (str);
 }
