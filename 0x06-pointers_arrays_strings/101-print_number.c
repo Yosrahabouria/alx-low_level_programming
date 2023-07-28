@@ -6,7 +6,7 @@
  * @n: integer params
  * Return: 0
 */
-print_number(int n)
+void print_number(int n)
 {
 	unsigned int n1;
 
