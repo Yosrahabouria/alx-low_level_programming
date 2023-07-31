@@ -5,7 +5,7 @@
  * print_diagsums - Entry point
  * @a : input
  * @size : input
- * Return: copied memory with n bytes changed
+ * Return: always 0 (success)
  */
 void print_diagsums(int *a, int size)
 {
@@ -23,6 +23,5 @@ void print_diagsums(int *a, int size)
 		sum2 += a[i * size + (size - i - 1)];
 	}
 	putchar(sum1);
-putchar(sum2);
+	putchar(sum2);
 }
-
