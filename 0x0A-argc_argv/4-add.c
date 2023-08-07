@@ -28,9 +28,9 @@ while (count < strlen(str))
 
 /**
  * main - print the name of a program
- * @agrc : number of arguments
- * @agrv : array of arguments
- * Return:always 0 (success)
+ * @argc: number of arguments
+ * @argv: array of arguments
+ * Return: always 0 (success)
 */
 int main(int argc, char *argv[])
 {
