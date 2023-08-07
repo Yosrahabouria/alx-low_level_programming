@@ -16,7 +16,7 @@ count = 0;
 while (count < strlen(str))
 {
 	if
-	  (isdigit(str[count]))
+	  (!isdigit(str[count]))
 		{
 			return (0);
 			}
@@ -47,7 +47,8 @@ while (count < argc)
 		sum += str_to_int;
 	}
 	else
-	{		printf("Error\n");
+	{
+		printf("Error\n");
 	return (1);
 }
 count++;
