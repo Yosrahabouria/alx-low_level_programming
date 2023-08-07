@@ -5,7 +5,7 @@
 /**
  * count_word - a function that counts words
  * @s : input value
- * Return: words
+ * Return: number of words
 */
 
 int count_word(char *s)
@@ -57,8 +57,11 @@ for (i = 0; i <= l; i++)
 			if (b == NULL)
 				return (NULL);
 			while (start < end)
+			{
+				*b++ = str[start++];
 				*b = '\0';
 			a[k] = b - c;
+			}
 			k++;
 			c = 0;
 		}
