@@ -31,8 +31,9 @@ if (s[i] >= '0' && s[i] <= '9')
 	n = n * 10 + digit;
 	f = 1;
 	if (s[i + 1] < '0' || s[i + 1] > '9')
-		break;
+	{		break;
 	f = 0;
+	}
 }
 i++;
 }
@@ -54,7 +55,7 @@ int main(int argc, char *argv[])
 
 	if (argc < 3 || argc > 3)
 	{
-		printf("error\n");
+		printf("Error\n");
 		return (1);
 	}
 	num1 = _atoi(argv[1]);
