@@ -3,7 +3,7 @@
 #include <string.h>
 #include "main.h"
 /**
- * *_memset - fils memory with a constant byte
+ * _memset - fils memory with a constant byte
  * @s: memory area to be filled
  * @b :char to copy
  * @n :number of times to copy b
@@ -36,7 +36,7 @@ if (nmemb == 0 || size == 0)
 ptr = malloc(size * nmemb);
 if (ptr == NULL)
 {	return (NULL);
-}	
+}
 _memset(ptr, 0, nmemb * size);
 return (ptr);
 }
