@@ -36,10 +36,13 @@ if (n < l2)
 				i++;
 				}
 while ((n < l2) && i < (l1 + n))
+{
 	s[i++] = s2[j++];
+}
 	while ((n >= l2) && i < (l1 + l2))
+{
 	s[i++] = s2[j++];
-
+}
 	s[i] = '\0';
 	return (s);
 }
