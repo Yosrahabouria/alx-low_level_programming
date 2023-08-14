@@ -4,7 +4,7 @@
 #include "dog.h"
 /**
  * init_dog - a function that initialize struct
- * @d : a struct
+ * @d : a pointer to struct
  * @name : a name
  * @age :age to initialize
  * @owner : owner to initialize
@@ -19,4 +19,3 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 		d->owner = owner;
 	}
 }
-
