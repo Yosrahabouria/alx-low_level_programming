@@ -44,7 +44,7 @@ dest[j] = '\0';
 return (dest);
 }
 
-/*
+/**
  * new_dog - creates a new dog
  * @name : name of the dog
  * @age : age of th dog
