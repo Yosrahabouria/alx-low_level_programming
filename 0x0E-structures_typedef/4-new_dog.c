@@ -29,22 +29,23 @@ int _strlen(char *s)
 */
 char *_strcpy(char *src, char *dest)
 {
-int l3, i;
+int l3, j;
 
 l3 = 0;
 while (src[l3] != '\0')
 {
 	l3++;
 }
-for (i = 0; i < l3; i++)
+for (j = 0; j < l3; j++)
 {
-	dest[i] = src[i];
+	dest[j] = src[j];
 }
-dest[i] = '\0';
+dest[j] = '\0';
 return (dest);
 }
+
 /*
- * new_dog -  a function that creates a new dog
+ * new_dog - creates a new dog
  * @name : name of the dog
  * @age : age of th dog
  * @owner : owner of the dog
