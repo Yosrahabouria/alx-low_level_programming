@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include<stdlib.h>
 #include <string.h>
-#include "main.h"
+#include "dog.h"
 /**
  * _strlen - returns the length of string
  *  @s : string to evaluate
