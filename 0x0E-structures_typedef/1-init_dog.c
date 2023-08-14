@@ -1,11 +1,11 @@
 #include<stdlib.h>
-#include <stdio.h>
-#include <string.h>
+#include<stdio.h>
+#include<string.h>
 #include "dog.h"
 /**
  * init_dog - a function that initialize struct
  * @d : a pointer to struct
- * @name : a name
+ * @name : a name to initialize
  * @age :age to initialize
  * @owner : owner to initialize
 */
