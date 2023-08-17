@@ -4,10 +4,10 @@
 #include <stdlib.h>
 #include "variadic_functions.h"
 /**
- * sum_them_all -  a function that copy memory area
+ * sum_them_all - a function that copy memory area
  * @n : input value
  * @... : input value
- * Return: if n == 0-0
+ * Return: if n == 0 - 0
  * otherwise-the sum of all parametrs
 */
 int sum_them_all(const unsigned int n, ...)
