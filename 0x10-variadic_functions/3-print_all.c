@@ -12,42 +12,36 @@ void print_all(const char * const format, ...)
 	int j;
 	char *str, *sep = "";
 	va_list list;
-const char t_arg[] = "cifs";
+ const char t_arg[] = "cifs";
 
-va_start(list, format);
+ va_start(list, format);
 
-while (format && format[i])
-{
-j = 0;
-while (t_arg[j])
-{
-if (format[i] == t_arg[j] && c)
-{
-printf(", ");
-break;
-} j++;
-}
-switch (format[i])
-{
-case 'c':
-printf("%s%c", sep, va_arg(list, int));
-break;
-case 'i':
-printf("%s%d", sep, va_arg(list, int));
-break;
-case 'f':
-printf("%s%f", sep, va_arg(list, double));
-break;
-case 's':
-str = va_arg(list, char *), c = 1;
-if (!str)
-{
-printf("(nil)");
-break;
-}
-printf("%s", str);
-break;
+ while (format && format[i])
+ {
+  j = 0;
+  while (t_arg[j])
+  {
+   if (format[i] == t_arg[j] && c)
+   {
+    printf(", ");
+   } j++;
+  if (format[i] == 'c')
+    printf("%s%c", sep, va_arg(list, int));
+  else if (format[i] == 'i')
+    printf(" %s%d", sep, va_arg(list, int));
+  else if (format[i] == 'f')
+    printf(" %s%f", sep, va_arg(list, double));
+  else if (format[i] == 's')
+    str = va_arg(list, char *), c = 1;
 
-} i++; }
-printf("\n"), va_end(list);
+  if (!str)
+  {
+   printf("(nil)");
+  }
+  printf("%s", str);
+ 
+
+  printf("\n"), va_end(list);
+  }
+ }
 }
