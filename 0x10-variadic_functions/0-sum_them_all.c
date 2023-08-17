@@ -4,9 +4,7 @@
 /**
  * sum_them_all - return the sum of parametrs
  * @n: input value
- * @...: input value
- * Return: if n == 0 - 0
- * otherwise - the sum of all parametrs
+ * Return:  sum of all parametrs
 */
 int sum_them_all(const unsigned int n, ...)
 {
