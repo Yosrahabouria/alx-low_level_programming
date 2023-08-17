@@ -25,6 +25,7 @@ if (format[i] == t_arg[j] && c)
 printf(", ");
 break;
 } j++;
+}
 switch (format[i])
 {
 case 'c':
@@ -45,4 +46,4 @@ printf("%s", str);
 break;
 } i++; }
 printf("\n"), va_end(list);
-}}
+}
