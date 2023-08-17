@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include "variadic_functions.h"
 /**
- * sum-them_all a function that copy memory area
+ * sum_them_all -  a function that copy memory area
  * @n : input value
  * @... : input value
  * Return: if n == 0-0
