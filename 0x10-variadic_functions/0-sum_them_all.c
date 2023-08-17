@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdarg.h>
+#include <stdlib.h>
 #include "variadic_functions.h"
 /**
  * sum-them_all a function that copy memory area
