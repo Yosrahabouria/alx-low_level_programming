@@ -5,13 +5,12 @@
 /**
  * print_all - a function that print anything
  * @format : input value
+ * Return : no return
 */
 void print_all(const char * const format, ...)
 {
-int i = 0;
-int c = 0;
-int j;
-char *str, *sep = "";
+unsigned int i = 0, c = 0, j;
+char *str;
 va_list list;
 const char t_arg[] = "cifs";
 
@@ -29,13 +28,13 @@ break;
 switch (format[i])
 {
 case 'c':
-printf("%s%c", sep, va_arg(list, int));
+printf("%c", va_arg(list, int)), c = 1;
 break;
 case 'i':
-printf("%s%d", sep, va_arg(list, int));
+printf("%d", va_arg(list, int)), c = 1;
 break;
 case 'f':
-printf("%s%f", sep, va_arg(list, double));
+printf("%f", va_arg(list, double)), c = 1;
 break;
 case 's':
 str = va_arg(list, char *), c = 1;
