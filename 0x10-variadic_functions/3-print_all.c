@@ -23,7 +23,7 @@ while (t_arg[j])
 {
 if (format[i] == t_arg[j] && c)
 {
-printf(", ");
+printf(" , ");
 break;
 } j++;
 if (format[i] == 'c')
@@ -33,12 +33,12 @@ printf(" %s%d", sep, va_arg(list, int));
 else if (format[i] == 'f')
 printf(" %s%f", sep, va_arg(list, double));
 else if (format[i] == 's')
-str = va_arg(list, char *), c = 1;
-
+{str = va_arg(list, char *), c = 1;
 if (!str)
 {
 printf("(nil)");
 break;
+}
 }
 printf("%s", str);
 break;
