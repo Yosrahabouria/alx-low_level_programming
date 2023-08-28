@@ -6,7 +6,8 @@
  * pop_listint - a function that delete the head
  * of a node in the list
  * @head : input value
- * Return: if the linked list is empty return 0
+ * Return:the data of the element deleted, if
+ *the linked list is empty return 0
 */
 int pop_listint(listint_t **head)
 {
