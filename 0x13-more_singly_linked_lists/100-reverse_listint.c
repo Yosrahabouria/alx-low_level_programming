@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include "main.h"
+#include "lists.h"
 /**
  * reverse_listint - a function that reverse a linked list
  * @head : input value
