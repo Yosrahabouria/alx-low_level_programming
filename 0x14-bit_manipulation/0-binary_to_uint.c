@@ -6,8 +6,7 @@
  * binary_to_uint - a function that converts a
  * binary number to an unsigned int
  * @b : input value
- * Return:  the converted number or 0 if there
- * is one or more chars in the string b that is not 0 or 1
+ * Return:  the converted number 
 */
 unsigned int binary_to_uint(const char *b)
 {
