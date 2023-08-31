@@ -10,8 +10,8 @@
 */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int a = 0;
-	int j;
+	unsigned int j = 0;
+	int a;
 
 	if (!b)
 		return (0);
