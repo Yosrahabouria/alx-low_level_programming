@@ -25,7 +25,7 @@ a = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 b = write(a, text_content, c);
 
 if (a == -1 || b == -1)
-{	
+{
 	return (-1);
 }
 close(a);
