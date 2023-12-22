@@ -49,7 +49,7 @@ shash_table_t *shash_table_create(unsigned long int size)
 int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 {
 	shash_node_t *new, *tmp;
-	char *value_cop;
+	char *value_cp;
 	unsigned long int index;
 
 	if (ht == NULL || key == NULL || *key == '\0' || value == NULL)
@@ -142,7 +142,7 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
 		return (NULL);
 
 	new = ht->shead;
-	while (new != NULL && strcmp(node->key, key) != 0)
+	while (new != NULL && strcmp(new->key, key) != 0)
 		new = new->snext;
 
 	return ((new == NULL) ? NULL : new->value);
