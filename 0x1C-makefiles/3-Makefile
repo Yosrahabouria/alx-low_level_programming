@@ -5,7 +5,11 @@ NAME = school
 RM = rm -f
 
 %.o: %.c m.h
+<<<<<<< HEAD
 	${CC} -c $< -o $@
+=======
+	${CC} -c -o $@ $<
+>>>>>>> 68758aaa4613f74c32bc7fbd987fbee70d6791bb
 
 all: ${OBJ}
 	${CC} -o ${NAME} ${OBJ}
